@@ -1,2 +1,2 @@
 baseurl: /class-blog
-exclude: [Gemfile]
+exclude: [Gemfile, _site]

@@ -14,7 +14,7 @@ title: Posts
 {% for post in site.posts %}
   <div class="col-md-3">
     <a href='{{ site.baseurl }}{{ post.url }}' class='blog-post-title'>{{ post.title }}</a> 
-    <p>by {{ post.post_author }} | {{post.month}} {{post.day}}, {{post.year}}</p>
+    <p>by {{ post.post_author }} | {{ post.month }} {{ post.day }}, {{ post.year }}</p>
     <p><a href='{{ site.baseurl }}{{ post.url }}'><span class="btn btn-primary">Read it</span></p>
   </div>
 {% endfor %}
