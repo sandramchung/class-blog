@@ -9,13 +9,16 @@ title: Posts
 <h1>Posts</h1>
 </div>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href='{{ post.url }}' class='blog-post-title'>{{ post.title }}</a> 
-      <p><a href='{{ post.url }}'><span class="btn btn-primary">Read more</span></p>
-    </li>
-  {% endfor %}
-</ul>
+<div class="row">
+
+{% for post in site.posts %}
+  <div class="col-md-3">
+    <a href='{{ post.url }}' class='blog-post-title'>{{ post.title }}</a> 
+    <p>by {{ post.post_author }} | {{post.month}} {{post.day}}, {{post.year}}</p>
+    <p><a href='{{ post.url }}'><span class="btn btn-primary">Read it</span></p>
+  </div>
+{% endfor %}
+
+</div>
 
 <div>
