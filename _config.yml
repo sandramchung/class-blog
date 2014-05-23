@@ -1,2 +1,2 @@
-source: https://sandramchung.github.io/class-blog
+baseurl: /class-blog
 exclude: [Gemfile]
