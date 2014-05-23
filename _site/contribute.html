@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebLab-Students | WebLab Class Blog | Home</title>
+  <title>WebLab-Students | Home</title>
 
   <!-- bootstrap core css -->
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -35,17 +35,21 @@
   </div>
 
   <ol>
-    <li><a href="https://help.github.com/articles/fork-a-repo">Fork this project.</a></li>
+    <li><a href="https://help.github.com/articles/fork-a-repo">Fork this project.</a> The code lives <a href="https://github.com/sandramchung/class-blog">here</a>.</li>
     <li>Add new posts to the _posts folder with properly formed YAML up top. At minimum:
-        <pre>
-          ---
-          Layout: post
-          Title: YourTitleHere
+        <pre>        
+---
+layout: post
+title: yourtitlehere
+month: May
+day: 20
+year: 2014
+post_author: yournamehere
+---
           ---</pre>
     <li>Feel free to change or add layouts, css, etc.</li>
-    <li>Add yourself as a contributor to the homepage (does someone know how to break these out into, say, a separate _contributors folder?)</li>
-    <li>Commit your changes.</li>
-    <li><a href="https://help.github.com/articles/using-pull-requests">Submit a pull request</a></li>
+    <li>Add yourself as a contributor to the homepage. There are <a href="http://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/adding-authors-to-your-jekyll-site.html">lots of cool ways to handle authors</a> that I don't have time to implement just yet - but you can.</li>
+    <li>When you're satisfied and it works, commit your changes and <a href="https://help.github.com/articles/using-pull-requests">Submit a pull request</a></li>
   </ol>
 
 </div> <!-- end container -->
