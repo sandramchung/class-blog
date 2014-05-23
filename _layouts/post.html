@@ -1,0 +1,69 @@
+<!doctype html>
+
+<head>
+{% include head.html %}
+</head>
+
+<body>
+
+<header>
+{% include header.html %}
+</header>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-8 blog-main">
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">{{ page.title}}</h2>
+        <p class="blog-post-meta">{{ page.date }} by <a href="#">{{ author }}</a></p>
+
+        {{content}}
+
+      </div><!-- /.blog-post -->
+
+    </div><!-- /.blog-main -->
+
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+      <div class="sidebar-module sidebar-module-inset">
+        <h4>About WebLab</h4>
+        <p>WebLab is a 12-week web development program, offered by <a href="http://www.frontrange.edu/" target="_blank">Front Range Community College</a></p>
+      </div>
+
+      <div class="sidebar-module">
+        <h4>Archives</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">May 2014</a></li>
+        </ol>
+      </div>
+      <div class="sidebar-module">
+        <h4>Contributors</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">Contributor 1</a></li>
+          <li><a href="#">Contributor 2</a></li>
+          <li><a href="#">Contributor 3</a></li>
+        </ol>
+      </div>
+    </div><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+
+    <ul class="pager">
+      <li><a href="{{page.previous}}">Previous</a></li>
+      <li><a href="{{page.next}}">Next</a></li>
+    </ul>
+
+</div><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

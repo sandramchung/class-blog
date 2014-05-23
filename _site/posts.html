@@ -10,65 +10,44 @@
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- Sticky footer styles -->
-  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-
-  <!-- attempts to override bootstrapp css -->
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link href="/css/blog.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-<nav>
-  <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">WebLab-Students</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="../../../../index.html">Home</a></li>
-            <li><a href="posts.html">Posts</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </div><!-- /.navbar -->
-</nav>
+<div class="blog-masthead">
+  <div class="container">
+    <nav class="blog-nav">
+      <a class="blog-nav-item active" id="home" href="/index.html">Home</a>
+      <a class="blog-nav-item" id="contribute" href="/contribute.html">Contribute</a>
+      <a class="blog-nav-item" id="posts" href="/posts.html">Posts</a>
+    </nav>
+  </div>
+</div>
 </header>
 
 
-<div>
+<div class="container">
+
 <h3>Posts</h3>
 <ul>
   
     <li>
-      <a href="/test/2014/05/21/test.html">I'm a little teapot</a>
-      <a href="/test/2014/05/21/test.html"><span class="btn btn-primary">Read more</span></a>
+      <a href='/2014/05/20/test.html' class='blog-post-title'>Test post</a> 
+      <p><a href='/2014/05/20/test.html'><span class="btn btn-primary">Read more</span></p>
     </li>
   
 </ul>
+
 <div>
 
-
-<div id='footer'>
-<div class="container">
-   <p class="text-muted">Created for <a href='http://www.frontrange.edu/weblab/' title='WebLab' target='_blank'>WebLab</a> Spring 2014</p>
-</div>
-
-
-</div>
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 </body>
 
