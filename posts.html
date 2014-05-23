@@ -1,0 +1,16 @@
+---
+layout: default
+title: Posts
+---
+
+<div>
+<h3>Posts</h3>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}"><span class="btn btn-primary">Read more</span></a>
+    </li>
+  {% endfor %}
+</ul>
+<div>

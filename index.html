@@ -1,24 +1,38 @@
 ---
 layout: default
-title: Sandra M. Chung
+title: WebLab Class Blog | Home
 ---
 
-<div class="row">
+<div class='container'>
 
-<div class="col-md-4">
-<h3>Posts</h3>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <a href="{{ post.url }}"><span class="btn btn-primary">Read more</span></a>
-    </li>
-  {% endfor %}
-</ul>
-<div>
+<div class='page-header'>
+<h1>About WebLab</h1>
 
-<div class="col-md-4">
-<p>I'm learning. Bear with me.</p>
-</div>
+<p>WebLab is a 12-week web development program, offered by <a href="http://www.frontrange.edu/" target="_blank">Front Range Community College</a></p>
 
 </div>
+
+<h1>Contributors (add yourself!)</h1>
+
+
+<div id='how'>
+  <h1>How to contribute</h1>
+  <ol>
+    <li>Fork this project</li>
+    <li>Add new posts to the _posts folder with properly formed YAML up top. At minimum:
+        <pre>
+          ---
+          Layout: post
+          Title: YourTitleHere
+          ---</pre>
+    <li>Feel free to change or add layouts, css, etc.</li>
+    <li>Add yourself as a contributor to the homepage (does someone know how to break these out into, say, a separate _contributors folder?)</li>
+    <li>Commit your changes.</li>
+    <li><a href="https://help.github.com/articles/using-pull-requests">Submit a pull request</a></li>
+  </ol>
+</div>
+
+
+</div>
+
+
