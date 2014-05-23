@@ -1,0 +1,24 @@
+---
+layout: default
+title: Sandra M. Chung
+---
+
+<div class="row">
+
+<div class="col-md-4">
+<h3>Posts</h3>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}"><span class="btn btn-primary">Read more</span></a>
+    </li>
+  {% endfor %}
+</ul>
+<div>
+
+<div class="col-md-4">
+<p>I'm learning. Bear with me.</p>
+</div>
+
+</div>
